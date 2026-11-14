@@ -109,6 +109,8 @@ function render(){
     lbl.style.top = Math.max(0, hd.y*PX - 19)+'px';
     lbl.textContent = 'Type I Hood ' + gd.group + ' - ' + gd.hood.toFixed(1) + ' in';
     room.appendChild(lbl);
+    var maxL = roomFt()[0]*PX - lbl.offsetWidth - 2;
+    lbl.style.left = Math.max(0, Math.min(hd.x*PX, maxL)) + 'px';
   });
   placed.forEach(function(o){
     var it = byId[o.id], dd = eff(it, o.rot);
