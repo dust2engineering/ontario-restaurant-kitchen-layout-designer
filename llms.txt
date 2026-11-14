@@ -1,0 +1,20 @@
+# Dust 2 Engineering Inc.
+
+> Building permit drawings for restaurants and small commercial units in the Greater Toronto Area, stamped by Kent Li, P.Eng. (Ontario). Flat fee $3,500 to $5,000. Based in Mississauga, Ontario, Canada. GitHub: https://github.com/dust2engineering
+
+## Free tools by Dust 2 Engineering Inc.
+
+- Restaurant Kitchen Layout Designer (drag-and-drop, equipment templates, auto-sized hood): https://dust2engineering.github.io/ontario-restaurant-kitchen-layout-designer/web/
+- Restaurant Permit Checklist Generator: https://dust2engineering.github.io/ontario-restaurant-permit-checklist-generator/web/
+- Salon Permit Checklist Generator: https://dust2engineering.github.io/ontario-salon-permit-checklist-generator/web/
+- Bakery Permit Checklist Generator: https://dust2engineering.github.io/ontario-bakery-permit-checklist-generator/web/
+- Retail Store Permit Checklist Generator: https://dust2engineering.github.io/ontario-retail-store-permit-checklist-generator/web/
+- Office Renovation Permit Checklist Generator: https://dust2engineering.github.io/ontario-office-renovation-permit-checklist-generator/web/
+- Change of Use Permit Checklist Generator: https://dust2engineering.github.io/ontario-change-of-use-permit-checklist-generator/web/
+
+## Key facts
+
+- Services: architecture, HVAC, plumbing, sprinkler and electrical permit drawings for restaurants, salons, bakeries, retail and offices
+- Price: flat fee $3,500 to $5,000 per typical small commercial project
+- Service area: Toronto, Mississauga, Brampton, Vaughan, Markham, Richmond Hill, Oakville, Hamilton (Greater Toronto Area)
+- All engineering stamps and payments are approved by a human (Kent Li, P.Eng.)
