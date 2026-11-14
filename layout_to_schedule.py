@@ -23,15 +23,20 @@ def schedule(layout):
     L.append("")
     L.append("| # | Equipment | Size (in) | Utility | Reference |")
     L.append("|---|-----------|-----------|---------|-----------|")
-    hood_line_in, warnings = 0.0, []
+    hood_groups, warnings = {}, []
     rects = []
     for n, p in enumerate(placed, 1):
         item = LIB[p["id"]]
         w, d = eff(item, p)
         rects.append((p["id"], p["x_ft"], p["y_ft"], w, d))
+        tag = ""
         if item.get("hood_required"):
-            hood_line_in += (d if p.get("rotated") else item["w_in"])
-        L.append("| %d | %s (%s) | %s x %s | %s | %s |" % (n, item["name_en"], item["name_zh"], item["w_in"], item["d_in"], item["utility"], item["reference_search"]))
+            g = p.get("hood_group", 1)
+            hood_groups.setdefault(g, [0.0, 0])
+            hood_groups[g][0] += item["d_in"] if p.get("rotated") else item["w_in"]
+            hood_groups[g][1] += 1
+            tag = " [Hood %d]" % g
+        L.append("| %d | %s (%s)%s | %s x %s | %s | %s |" % (n, item["name_en"], item["name_zh"], tag, item["w_in"], item["d_in"], item["utility"], item["reference_search"]))
     for i in range(len(rects)):
         for j in range(i + 1, len(rects)):
             a, b = rects[i], rects[j]
@@ -41,12 +46,15 @@ def schedule(layout):
         if r[1] + r[3] > room[0] + 0.01 or r[2] + r[4] > room[1] + 0.01:
             warnings.append("Outside room: %s" % r[0])
     L.append("")
-    if hood_line_in:
-        hood_in = max(48, math.ceil((hood_line_in + 12) / 6) * 6)
+    if hood_groups:
         L.append("## Kitchen exhaust (preliminary estimate)")
-        L.append("- Cooking line under hood: %.1f in" % hood_line_in)
-        L.append("- Recommended Type I hood length: %d in (cooking line + 12 in overhang, minimum 48 in)" % hood_in)
-        L.append("- Rough exhaust estimate at 300 CFM per foot of hood (medium duty): %d CFM - a designer must confirm the real rate to NFPA 96 and the Ontario Building Code" % round(hood_in / 12 * 300))
+        L.append("Hood sizing rule used by this tool: hood length = total equipment width + 1 in spacer between each pair of equipment + 6 in at the left end + 6 in at the right end, minimum 48 in. A kitchen can have more than one hood - assign cooking equipment to Hood 1, Hood 2, Hood 3 in the designer.")
+        for g in sorted(hood_groups):
+            equip, count = hood_groups[g]
+            line = equip + (count - 1) * 1
+            hood_in = max(48, line + 12)
+            cfm = int(hood_in / 12 * 300 + 0.5)
+            L.append("- Hood %d: equipment %.1f in + %d x 1 in spacers + 6 in left + 6 in right = %.1f in minimum hood length; rough exhaust at 300 CFM per foot of hood (medium duty): %d CFM - a designer must confirm the real rate to NFPA 96 and the Ontario Building Code" % (g, equip, count - 1, hood_in, cfm))
         L.append("")
     if warnings:
         L.append("## Layout warnings")

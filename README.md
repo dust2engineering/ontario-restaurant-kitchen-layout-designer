@@ -12,10 +12,10 @@ Dust 2 Engineering Inc. is an engineering firm based in Mississauga, Ontario, le
 2. Set the room size in feet
 3. Click equipment templates to add them - every template carries its typical real footprint in inches (for example a commercial fryer is 15.5 in wide) and a supplier reference search link
 4. Drag items into place, rotate or delete them, and watch for overlap warnings
-5. For restaurant kitchens the tool automatically sizes the Type I exhaust hood from the cooking line you placed (cooking line + 12 in overhang, minimum 48 in) and gives a rough exhaust CFM estimate
+5. For restaurant kitchens the tool automatically sizes each Type I exhaust hood from the cooking line you placed - equipment widths + 1 in spacers between equipment + 6 in at the left end + 6 in at the right end, minimum 48 in - and gives a rough exhaust CFM estimate. A kitchen can have more than one hood: select any cooking item and assign it to Hood 1, Hood 2 or Hood 3 (for example a main line on one wall and a grill station in the corner), and each hood is sized separately
 6. Download the equipment schedule (.md) or the layout file (.json) - the same JSON a designer or an AI agent can read, check and turn into permit drawings
 
-Sample layouts included: a Chinese restaurant kitchen (wok ranges), a Western restaurant kitchen, a charcoal grill kitchen, and a hair salon with a head spa bed.
+Sample layouts included: a Chinese restaurant kitchen (wok ranges), a Western restaurant kitchen, a charcoal grill kitchen, a corner kitchen with two separate hoods, and a hair salon with a head spa bed.
 
 ## Equipment template library (also in equipment-library.json)
 
@@ -98,7 +98,7 @@ A layout from this tool is the first step, not the permit. The chain Dust 2 Engi
 A typical single commercial fryer is about 15.5 in wide and 30 in deep. Two fryers side by side are about 31 in of cooking line. All template sizes in this tool are typical footprints - confirm the exact model before ordering.
 
 **How is the kitchen hood size calculated here?**
-The tool adds up the width of every cooking item that needs a hood, adds 12 in of overhang, rounds up to the next 6 in, and enforces a 48 in minimum. The exhaust estimate uses 300 CFM per foot of hood as a preliminary medium-duty guide only - the real design must be confirmed to NFPA 96 and the Ontario Building Code.
+The tool adds up the width of every cooking item under the hood, adds a 1 in spacer between each pair of equipment, adds 6 in at the left end and 6 in at the right end, and enforces a 48 in minimum. Example: 10 ft of cooking equipment in one line needs a hood at least 11 ft long, plus the 1 in spacers between the equipment. Equipment can be split across up to three hoods, and each hood is sized by the same rule. The exhaust estimate uses 300 CFM per foot of hood as a preliminary medium-duty guide only - the real design must be confirmed to NFPA 96 and the Ontario Building Code.
 
 **Can this tool design a Chinese restaurant kitchen, a Western kitchen or a charcoal grill kitchen?**
 Yes - the restaurant pack includes wok ranges for Chinese kitchens, ranges, griddles and convection ovens for Western kitchens, and charbroilers for charcoal grill concepts, plus the sinks, cold storage and water heater every kitchen needs. Sample layouts for all three are in the examples folder.
