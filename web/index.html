@@ -101,9 +101,14 @@ function render(){
     h.className = 'hoodblk' + (selHood===parseInt(gd.group, 10) ? ' sel' : '');
     h.style.left = (hd.x*PX)+'px'; h.style.top = (hd.y*PX)+'px';
     h.style.width = (dim[0]*PX)+'px'; h.style.height = (dim[1]*PX)+'px';
-    h.textContent = 'Type I Hood ' + gd.group + ' - ' + gd.hood.toFixed(1) + ' in';
     h.onpointerdown = function(ev){ startHoodDrag(ev, parseInt(gd.group, 10), h); };
     room.appendChild(h);
+    var lbl = document.createElement('div');
+    lbl.style.cssText = 'position:absolute;z-index:3;pointer-events:none;background:#121417;color:#f2b33d;font-size:11px;font-weight:700;padding:1px 6px;border:1px solid #f2b33d;border-radius:4px;white-space:nowrap';
+    lbl.style.left = (hd.x*PX)+'px';
+    lbl.style.top = Math.max(0, hd.y*PX - 19)+'px';
+    lbl.textContent = 'Type I Hood ' + gd.group + ' - ' + gd.hood.toFixed(1) + ' in';
+    room.appendChild(lbl);
   });
   placed.forEach(function(o){
     var it = byId[o.id], dd = eff(it, o.rot);
