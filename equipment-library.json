@@ -256,18 +256,6 @@
    "reference_search": "https://www.webstaurantstore.com/search/commercial-shelving.html"
   },
   {
-   "id": "hood-note",
-   "pack": "restaurant",
-   "name_en": "Type I Kitchen Hood (auto-sized)",
-   "name_zh": "抽油烟机 Type I",
-   "w_in": 48,
-   "d_in": 48,
-   "category": "vent",
-   "utility": "electric + duct",
-   "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/type-1-kitchen-hood.html"
-  },
-  {
    "id": "styling-station",
    "pack": "salon",
    "name_en": "Styling Station",

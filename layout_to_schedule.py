@@ -26,16 +26,22 @@ def schedule(layout):
     hood_groups, warnings = {}, []
     rects = []
     for n, p in enumerate(placed, 1):
-        item = LIB[p["id"]]
+        item = LIB.get(p["id"])
+        if item is None:
+            warnings.append("Unknown equipment id skipped: %s" % p["id"])
+            continue
         w, d = eff(item, p)
         rects.append((p["id"], p["x_ft"], p["y_ft"], w, d))
         tag = ""
         if item.get("hood_required"):
             g = p.get("hood_group", 1)
-            hood_groups.setdefault(g, [0.0, 0])
-            hood_groups[g][0] += item["d_in"] if p.get("rotated") else item["w_in"]
-            hood_groups[g][1] += 1
-            tag = " [Hood %d]" % g
+            if g:
+                hood_groups.setdefault(g, [0.0, 0])
+                hood_groups[g][0] += item["d_in"] if p.get("rotated") else item["w_in"]
+                hood_groups[g][1] += 1
+                tag = " [Hood %d]" % g
+            else:
+                tag = " [No hood]"
         L.append("| %d | %s (%s)%s | %s x %s | %s | %s |" % (n, item["name_en"], item["name_zh"], tag, item["w_in"], item["d_in"], item["utility"], item["reference_search"]))
     for i in range(len(rects)):
         for j in range(i + 1, len(rects)):
@@ -55,6 +61,12 @@ def schedule(layout):
             hood_in = max(48, line + 12)
             cfm = int(hood_in / 12 * 300 + 0.5)
             L.append("- Hood %d: equipment %.1f in + %d x 1 in spacers + 6 in left + 6 in right = %.1f in minimum hood length; rough exhaust at 300 CFM per foot of hood (medium duty): %d CFM - a designer must confirm the real rate to NFPA 96 and the Ontario Building Code" % (g, equip, count - 1, hood_in, cfm))
+        L.append("")
+    plan_hoods = layout.get("hoods") or []
+    if plan_hoods:
+        L.append("## Hoods shown on the plan")
+        for h in plan_hoods:
+            L.append("- Hood %s: drawn at x %s ft, y %s ft%s, length %s in" % (h.get("group"), h.get("x_ft"), h.get("y_ft"), ", vertical" if h.get("rotated") else "", h.get("length_in")))
         L.append("")
     if warnings:
         L.append("## Layout warnings")

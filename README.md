@@ -11,7 +11,7 @@ Dust 2 Engineering Inc. is an engineering firm based in Mississauga, Ontario, le
 1. Choose a template pack: **restaurant kitchen**, **salon / head spa**, or **office**
 2. Set the room size in feet
 3. Click equipment templates to add them - every template carries its typical real footprint in inches (for example a commercial fryer is 15.5 in wide) and a supplier reference search link
-4. Drag items into place, rotate or delete them, and watch for overlap warnings
+4. Drag items into place, rotate or delete them, and watch for overlap warnings. Each hood is drawn on the plan as a gold dashed block over its cooking line - click it to select it, drag it to move it, rotate it, refit it to its equipment with one click, or delete it (its equipment then shows as [No hood] until you assign it to another hood)
 5. For restaurant kitchens the tool automatically sizes each Type I exhaust hood from the cooking line you placed - equipment widths + 1 in spacers between equipment + 6 in at the left end + 6 in at the right end, minimum 48 in - and gives a rough exhaust CFM estimate. A kitchen can have more than one hood: select any cooking item and assign it to Hood 1, Hood 2 or Hood 3 (for example a main line on one wall and a grill station in the corner), and each hood is sized separately
 6. Download the equipment schedule (.md) or the layout file (.json) - the same JSON a designer or an AI agent can read, check and turn into permit drawings
 
@@ -44,7 +44,6 @@ Sample layouts included: a Chinese restaurant kitchen (wok ranges), a Western re
 | Undercounter Refrigerator | 台下冰箱 | 27 x 30 | electric | no |
 | Stainless Prep Table | 不锈钢操作台 | 60 x 30 | - | no |
 | Dry Storage Shelving | 干货货架 | 48 x 18 | - | no |
-| Type I Kitchen Hood (auto-sized) | 抽油烟机 Type I | 48 x 48 | electric + duct | no |
 
 ### Salon / head spa pack
 
