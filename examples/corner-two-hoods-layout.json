@@ -1,0 +1,87 @@
+{
+ "name": "Corner Kitchen - Two Hoods - sample",
+ "pack": "restaurant",
+ "room_ft": [
+  20,
+  12
+ ],
+ "items": [
+  {
+   "id": "range-6-burner",
+   "x_ft": 0,
+   "y_ft": 0,
+   "hood_group": 1
+  },
+  {
+   "id": "fryer",
+   "x_ft": 3.25,
+   "y_ft": 0,
+   "hood_group": 1
+  },
+  {
+   "id": "griddle",
+   "x_ft": 4.75,
+   "y_ft": 0,
+   "hood_group": 1
+  },
+  {
+   "id": "charbroiler",
+   "x_ft": 17.5,
+   "y_ft": 2.5,
+   "rotated": true,
+   "hood_group": 2
+  },
+  {
+   "id": "wok-range",
+   "x_ft": 17,
+   "y_ft": 4.75,
+   "rotated": true,
+   "hood_group": 2
+  },
+  {
+   "id": "sink-2-comp",
+   "x_ft": 8.5,
+   "y_ft": 0
+  },
+  {
+   "id": "hand-sink",
+   "x_ft": 12.5,
+   "y_ft": 0
+  },
+  {
+   "id": "prep-table",
+   "x_ft": 0,
+   "y_ft": 3.5
+  },
+  {
+   "id": "prep-table",
+   "x_ft": 5.5,
+   "y_ft": 3.5
+  },
+  {
+   "id": "water-heater",
+   "x_ft": 0,
+   "y_ft": 7
+  },
+  {
+   "id": "mop-sink",
+   "x_ft": 0,
+   "y_ft": 9.5
+  },
+  {
+   "id": "reach-in-fridge",
+   "x_ft": 3,
+   "y_ft": 9.25
+  },
+  {
+   "id": "dry-shelf",
+   "x_ft": 14.5,
+   "y_ft": 10.5
+  },
+  {
+   "id": "walk-in-cooler",
+   "x_ft": 8,
+   "y_ft": 6.0
+  }
+ ]
+}
