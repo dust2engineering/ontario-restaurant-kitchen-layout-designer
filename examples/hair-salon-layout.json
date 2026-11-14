@@ -1,0 +1,89 @@
+{
+ "name": "Hair Salon - sample",
+ "pack": "salon",
+ "room_ft": [
+  16,
+  12
+ ],
+ "items": [
+  {
+   "id": "styling-station",
+   "x_ft": 0,
+   "y_ft": 0,
+   "rotated": true
+  },
+  {
+   "id": "styling-station",
+   "x_ft": 0,
+   "y_ft": 3.5,
+   "rotated": true
+  },
+  {
+   "id": "styling-station",
+   "x_ft": 0,
+   "y_ft": 6.5,
+   "rotated": true
+  },
+  {
+   "id": "salon-chair",
+   "x_ft": 1.75,
+   "y_ft": 0.5
+  },
+  {
+   "id": "salon-chair",
+   "x_ft": 1.75,
+   "y_ft": 4
+  },
+  {
+   "id": "salon-chair",
+   "x_ft": 1.75,
+   "y_ft": 7
+  },
+  {
+   "id": "shampoo-station",
+   "x_ft": 4.5,
+   "y_ft": 0
+  },
+  {
+   "id": "shampoo-station",
+   "x_ft": 7.25,
+   "y_ft": 0
+  },
+  {
+   "id": "head-spa-bed",
+   "x_ft": 9.75,
+   "y_ft": 0,
+   "rotated": true
+  },
+  {
+   "id": "manicure-table",
+   "x_ft": 4.5,
+   "y_ft": 5
+  },
+  {
+   "id": "pedicure-chair",
+   "x_ft": 4.5,
+   "y_ft": 7
+  },
+  {
+   "id": "massage-bed",
+   "x_ft": 8.25,
+   "y_ft": 5
+  },
+  {
+   "id": "waiting-bench",
+   "x_ft": 11,
+   "y_ft": 7.5
+  },
+  {
+   "id": "reception-desk",
+   "x_ft": 10.75,
+   "y_ft": 10
+  },
+  {
+   "id": "salon-laundry",
+   "x_ft": 0,
+   "y_ft": 9.75
+  }
+ ]
+}
