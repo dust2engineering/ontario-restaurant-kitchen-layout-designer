@@ -2,22 +2,24 @@
 
 **Room:** 20 x 12 ft | **Pack:** restaurant
 
-| # | Equipment | Size (in) | Utility | Reference |
-|---|-----------|-----------|---------|-----------|
-| 1 | 6-Burner Range (六头灶) [Hood 1] | 36 x 30 | gas | https://www.webstaurantstore.com/search/commercial-range.html |
-| 2 | Commercial Fryer (燃气炸炉) [Hood 1] | 15.5 x 30 | gas | https://www.webstaurantstore.com/search/commercial-fryer.html |
-| 3 | Flat Griddle (扒炉) [Hood 1] | 36 x 30 | gas / electric | https://www.webstaurantstore.com/search/commercial-griddle.html |
-| 4 | Charbroiler (charcoal / gas) (炭火烤炉) [Hood 2] | 24 x 30 | charcoal / gas | https://www.webstaurantstore.com/search/commercial-charbroiler.html |
-| 5 | Chinese Wok Range (中式炒炉) [Hood 2] | 36 x 36 | gas + water | https://www.webstaurantstore.com/search/chinese-wok-range.html |
-| 6 | 2-Compartment Sink (双池洗碗池) | 42 x 27 | water + drain | https://www.webstaurantstore.com/search/2-compartment-sink.html |
-| 7 | Hand Sink (洗手池) | 17 x 15 | water + drain | https://www.webstaurantstore.com/search/commercial-hand-sink.html |
-| 8 | Stainless Prep Table (不锈钢操作台) | 60 x 30 | - | https://www.webstaurantstore.com/search/stainless-steel-work-table.html |
-| 9 | Stainless Prep Table (不锈钢操作台) | 60 x 30 | - | https://www.webstaurantstore.com/search/stainless-steel-work-table.html |
-| 10 | Commercial Water Heater (商用热水器) | 28 x 28 | gas / electric | https://www.webstaurantstore.com/search/commercial-water-heater.html |
-| 11 | Mop Sink (拖把池) | 24 x 24 | water + drain | https://www.webstaurantstore.com/search/mop-sink.html |
-| 12 | Reach-In Refrigerator (双门冰箱) | 54 x 33 | electric | https://www.webstaurantstore.com/search/reach-in-refrigerator.html |
-| 13 | Dry Storage Shelving (干货货架) | 48 x 18 | - | https://www.webstaurantstore.com/search/commercial-shelving.html |
-| 14 | Walk-In Cooler 6x6 ft (步入式雪库) | 72 x 72 | electric | https://www.webstaurantstore.com/search/walk-in-cooler.html |
+| # | Equipment | Size (in) | Utility | Typical price (US$) | Reference |
+|---|-----------|-----------|---------|---------------------|-----------|
+| 1 | 6-Burner Range (六头灶) [Hood 1] | 36 x 30 | gas | ~$2,100 | https://www.webstaurantstore.com/search/commercial-range.html |
+| 2 | Commercial Fryer (燃气炸炉) [Hood 1] | 15.5 x 30 | gas | ~$1,100 | https://www.webstaurantstore.com/search/commercial-fryer.html |
+| 3 | Flat Griddle (扒炉) [Hood 1] | 36 x 30 | gas / electric | ~$1,500 | https://www.webstaurantstore.com/search/commercial-griddle.html |
+| 4 | Charbroiler (charcoal / gas) (炭火烤炉) [Hood 2] | 24 x 30 | charcoal / gas | ~$1,300 | https://www.webstaurantstore.com/search/commercial-charbroiler.html |
+| 5 | Chinese Wok Range (中式炒炉) [Hood 2] | 36 x 36 | gas + water | ~$1,600 | https://www.webstaurantstore.com/search/chinese-wok-range.html |
+| 6 | 2-Compartment Sink (双池洗碗池) | 42 x 27 | water + drain | ~$650 | https://www.webstaurantstore.com/search/2-compartment-sink.html |
+| 7 | Hand Sink (洗手池) | 17 x 15 | water + drain | ~$160 | https://www.webstaurantstore.com/search/commercial-hand-sink.html |
+| 8 | Stainless Prep Table (不锈钢操作台) | 60 x 30 | - | ~$420 | https://www.webstaurantstore.com/search/stainless-steel-work-table.html |
+| 9 | Stainless Prep Table (不锈钢操作台) | 60 x 30 | - | ~$420 | https://www.webstaurantstore.com/search/stainless-steel-work-table.html |
+| 10 | Commercial Water Heater (商用热水器) | 28 x 28 | gas / electric | ~$2,100 | https://www.webstaurantstore.com/search/commercial-water-heater.html |
+| 11 | Mop Sink (拖把池) | 24 x 24 | water + drain | ~$320 | https://www.webstaurantstore.com/search/mop-sink.html |
+| 12 | Reach-In Refrigerator (双门冰箱) | 54 x 33 | electric | ~$3,400 | https://www.webstaurantstore.com/search/reach-in-refrigerator.html |
+| 13 | Dry Storage Shelving (干货货架) | 48 x 18 | - | ~$220 | https://www.webstaurantstore.com/search/commercial-shelving.html |
+| 14 | Walk-In Cooler 6x6 ft (步入式雪库) | 72 x 72 | electric | ~$10,500 | https://www.webstaurantstore.com/search/walk-in-cooler.html |
+
+**Estimated equipment total (typical reference prices, US$): $25,790** across 14 priced item(s); 0 item(s) Not clear and not included. Prices are rough public-listing references only - confirm current prices with suppliers before budgeting.
 
 ## Kitchen exhaust (preliminary estimate)
 Hood sizing rule used by this tool: hood length = total equipment width + 1 in spacer between each pair of equipment + 6 in at the left end + 6 in at the right end, minimum 48 in. A kitchen can have more than one hood - assign cooking equipment to Hood 1, Hood 2, Hood 3 in the designer.
