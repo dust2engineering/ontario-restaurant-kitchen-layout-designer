@@ -14,15 +14,16 @@ def eff(item, placed):
     return (d, w) if placed.get("rotated") else (w, d)
 
 def schedule(layout):
-    room = layout.get("room_ft", [18, 12])
+    room = [v / 12 for v in layout["room_in"]] if layout.get("room_in") else layout.get("room_ft", [18, 12])
     placed = layout["items"]
     L = []
     L.append("# Equipment Schedule - %s" % layout.get("name", "Layout"))
     L.append("")
     L.append("**Room:** %s x %s ft | **Pack:** %s" % (room[0], room[1], layout.get("pack", "restaurant")))
     L.append("")
-    L.append("| # | Equipment | Size (in) | Utility | Reference |")
-    L.append("|---|-----------|-----------|---------|-----------|")
+    L.append("| # | Equipment | Size (in) | Utility | Typical price (US$) | Reference |")
+    L.append("|---|-----------|-----------|---------|---------------------|-----------|")
+    price_total, price_n, clear_n = 0, 0, 0
     hood_groups, warnings = {}, []
     rects = []
     for n, p in enumerate(placed, 1):
@@ -42,7 +43,14 @@ def schedule(layout):
                 tag = " [Hood %d]" % g
             else:
                 tag = " [No hood]"
-        L.append("| %d | %s (%s)%s | %s x %s | %s | %s |" % (n, item["name_en"], item["name_zh"], tag, item["w_in"], item["d_in"], item["utility"], item["reference_search"]))
+        price = item.get("price_usd_typical")
+        if price:
+            price_total += price; price_n += 1; price_cell = "~$" + format(price, ",")
+        else:
+            clear_n += 1; price_cell = "Not clear"
+        L.append("| %d | %s (%s)%s | %s x %s | %s | %s | %s |" % (n, item["name_en"], item["name_zh"], tag, item["w_in"], item["d_in"], item["utility"], price_cell, item["reference_search"]))
+    L.append("")
+    L.append("**Estimated equipment total (typical reference prices, US$): $%s** across %d priced item(s); %d item(s) Not clear and not included. Prices are rough public-listing references only - confirm current prices with suppliers before budgeting." % (format(price_total, ","), price_n, clear_n))
     for i in range(len(rects)):
         for j in range(i + 1, len(rects)):
             a, b = rects[i], rects[j]

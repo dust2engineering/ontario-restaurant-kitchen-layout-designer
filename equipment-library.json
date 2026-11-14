@@ -1,7 +1,7 @@
 {
  "version": "1.0",
  "by": "Dust 2 Engineering Inc., Mississauga, Ontario - Kent Li, P.Eng.",
- "note": "Typical North American commercial equipment footprints for preliminary layout only. Confirm the exact model dimensions, clearances and utility requirements with the manufacturer before ordering or submitting permit drawings.",
+ "note": "Typical North American commercial equipment footprints and typical public-listing reference prices (US$) for preliminary layout and budgeting only. price_usd_typical is null where no reliable typical price is published - shown as 'Not clear'. Confirm the exact model dimensions, clearances, utility requirements and current prices with the manufacturer or supplier before ordering or submitting permit drawings.",
  "items": [
   {
    "id": "fryer",
@@ -13,7 +13,8 @@
    "category": "cooking",
    "utility": "gas",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-fryer.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-fryer.html",
+   "price_usd_typical": 1100
   },
   {
    "id": "range-6-burner",
@@ -25,7 +26,8 @@
    "category": "cooking",
    "utility": "gas",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-range.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-range.html",
+   "price_usd_typical": 2100
   },
   {
    "id": "wok-range",
@@ -37,7 +39,8 @@
    "category": "cooking",
    "utility": "gas + water",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/chinese-wok-range.html"
+   "reference_search": "https://www.webstaurantstore.com/search/chinese-wok-range.html",
+   "price_usd_typical": 1600
   },
   {
    "id": "charbroiler",
@@ -49,7 +52,8 @@
    "category": "cooking",
    "utility": "charcoal / gas",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-charbroiler.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-charbroiler.html",
+   "price_usd_typical": 1300
   },
   {
    "id": "griddle",
@@ -61,7 +65,8 @@
    "category": "cooking",
    "utility": "gas / electric",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-griddle.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-griddle.html",
+   "price_usd_typical": 1500
   },
   {
    "id": "convection-oven",
@@ -73,7 +78,8 @@
    "category": "cooking",
    "utility": "gas / electric",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-convection-oven.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-convection-oven.html",
+   "price_usd_typical": 3600
   },
   {
    "id": "rice-station",
@@ -85,7 +91,8 @@
    "category": "cooking",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-rice-cooker.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-rice-cooker.html",
+   "price_usd_typical": 350
   },
   {
    "id": "salamander",
@@ -97,7 +104,8 @@
    "category": "cooking",
    "utility": "gas / electric",
    "hood_required": true,
-   "reference_search": "https://www.webstaurantstore.com/search/salamander-broiler.html"
+   "reference_search": "https://www.webstaurantstore.com/search/salamander-broiler.html",
+   "price_usd_typical": 950
   },
   {
    "id": "sink-2-comp",
@@ -109,7 +117,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/2-compartment-sink.html"
+   "reference_search": "https://www.webstaurantstore.com/search/2-compartment-sink.html",
+   "price_usd_typical": 650
   },
   {
    "id": "sink-3-comp",
@@ -121,7 +130,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/3-compartment-sink.html"
+   "reference_search": "https://www.webstaurantstore.com/search/3-compartment-sink.html",
+   "price_usd_typical": 950
   },
   {
    "id": "prep-sink",
@@ -133,7 +143,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-prep-sink.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-prep-sink.html",
+   "price_usd_typical": 380
   },
   {
    "id": "mop-sink",
@@ -145,7 +156,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/mop-sink.html"
+   "reference_search": "https://www.webstaurantstore.com/search/mop-sink.html",
+   "price_usd_typical": 320
   },
   {
    "id": "hand-sink",
@@ -157,7 +169,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-hand-sink.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-hand-sink.html",
+   "price_usd_typical": 160
   },
   {
    "id": "dishwasher",
@@ -169,7 +182,8 @@
    "category": "wet",
    "utility": "electric + water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-dishwasher.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-dishwasher.html",
+   "price_usd_typical": 4200
   },
   {
    "id": "water-heater",
@@ -181,7 +195,8 @@
    "category": "wet",
    "utility": "gas / electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-water-heater.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-water-heater.html",
+   "price_usd_typical": 2100
   },
   {
    "id": "walk-in-cooler",
@@ -193,7 +208,8 @@
    "category": "cold",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/walk-in-cooler.html"
+   "reference_search": "https://www.webstaurantstore.com/search/walk-in-cooler.html",
+   "price_usd_typical": 10500
   },
   {
    "id": "reach-in-fridge",
@@ -205,7 +221,8 @@
    "category": "cold",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/reach-in-refrigerator.html"
+   "reference_search": "https://www.webstaurantstore.com/search/reach-in-refrigerator.html",
+   "price_usd_typical": 3400
   },
   {
    "id": "reach-in-freezer",
@@ -217,7 +234,8 @@
    "category": "cold",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/reach-in-freezer.html"
+   "reference_search": "https://www.webstaurantstore.com/search/reach-in-freezer.html",
+   "price_usd_typical": 3900
   },
   {
    "id": "undercounter-fridge",
@@ -229,7 +247,8 @@
    "category": "cold",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/undercounter-refrigerator.html"
+   "reference_search": "https://www.webstaurantstore.com/search/undercounter-refrigerator.html",
+   "price_usd_typical": 1500
   },
   {
    "id": "prep-table",
@@ -241,7 +260,8 @@
    "category": "prep",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/stainless-steel-work-table.html"
+   "reference_search": "https://www.webstaurantstore.com/search/stainless-steel-work-table.html",
+   "price_usd_typical": 420
   },
   {
    "id": "dry-shelf",
@@ -253,7 +273,8 @@
    "category": "storage",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-shelving.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-shelving.html",
+   "price_usd_typical": 220
   },
   {
    "id": "styling-station",
@@ -265,7 +286,8 @@
    "category": "service",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/salon-styling-station.html"
+   "reference_search": "https://www.webstaurantstore.com/search/salon-styling-station.html",
+   "price_usd_typical": 550
   },
   {
    "id": "salon-chair",
@@ -277,7 +299,8 @@
    "category": "service",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/salon-chair.html"
+   "reference_search": "https://www.webstaurantstore.com/search/salon-chair.html",
+   "price_usd_typical": 420
   },
   {
    "id": "shampoo-station",
@@ -289,7 +312,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/shampoo-bowl-station.html"
+   "reference_search": "https://www.webstaurantstore.com/search/shampoo-bowl-station.html",
+   "price_usd_typical": 850
   },
   {
    "id": "head-spa-bed",
@@ -301,7 +325,8 @@
    "category": "wet",
    "utility": "water + drain + electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/head-spa-bed.html"
+   "reference_search": "https://www.webstaurantstore.com/search/head-spa-bed.html",
+   "price_usd_typical": null
   },
   {
    "id": "massage-bed",
@@ -313,7 +338,8 @@
    "category": "service",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/massage-table.html"
+   "reference_search": "https://www.webstaurantstore.com/search/massage-table.html",
+   "price_usd_typical": 650
   },
   {
    "id": "pedicure-chair",
@@ -325,7 +351,8 @@
    "category": "wet",
    "utility": "water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/pedicure-chair.html"
+   "reference_search": "https://www.webstaurantstore.com/search/pedicure-chair.html",
+   "price_usd_typical": 2600
   },
   {
    "id": "manicure-table",
@@ -337,7 +364,8 @@
    "category": "service",
    "utility": "electric + vent",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/manicure-table.html"
+   "reference_search": "https://www.webstaurantstore.com/search/manicure-table.html",
+   "price_usd_typical": 450
   },
   {
    "id": "salon-laundry",
@@ -349,7 +377,8 @@
    "category": "utility",
    "utility": "electric + water + drain",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/stackable-washer-dryer.html"
+   "reference_search": "https://www.webstaurantstore.com/search/stackable-washer-dryer.html",
+   "price_usd_typical": 2400
   },
   {
    "id": "reception-desk",
@@ -361,7 +390,8 @@
    "category": "front",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/reception-desk.html"
+   "reference_search": "https://www.webstaurantstore.com/search/reception-desk.html",
+   "price_usd_typical": 900
   },
   {
    "id": "waiting-bench",
@@ -373,7 +403,8 @@
    "category": "front",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/waiting-room-bench.html"
+   "reference_search": "https://www.webstaurantstore.com/search/waiting-room-bench.html",
+   "price_usd_typical": 450
   },
   {
    "id": "desk-cluster-4",
@@ -385,7 +416,8 @@
    "category": "work",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/office-desk-cluster.html"
+   "reference_search": "https://www.webstaurantstore.com/search/office-desk-cluster.html",
+   "price_usd_typical": 2400
   },
   {
    "id": "single-desk",
@@ -397,7 +429,8 @@
    "category": "work",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/office-desk.html"
+   "reference_search": "https://www.webstaurantstore.com/search/office-desk.html",
+   "price_usd_typical": 450
   },
   {
    "id": "boardroom-table",
@@ -409,7 +442,8 @@
    "category": "work",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/conference-table.html"
+   "reference_search": "https://www.webstaurantstore.com/search/conference-table.html",
+   "price_usd_typical": 1300
   },
   {
    "id": "filing-cabinet",
@@ -421,7 +455,8 @@
    "category": "storage",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/filing-cabinet.html"
+   "reference_search": "https://www.webstaurantstore.com/search/filing-cabinet.html",
+   "price_usd_typical": 350
   },
   {
    "id": "printer-station",
@@ -433,7 +468,8 @@
    "category": "work",
    "utility": "electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/printer-stand.html"
+   "reference_search": "https://www.webstaurantstore.com/search/printer-stand.html",
+   "price_usd_typical": 220
   },
   {
    "id": "kitchenette",
@@ -445,7 +481,8 @@
    "category": "wet",
    "utility": "water + drain + electric",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/kitchenette-cabinet.html"
+   "reference_search": "https://www.webstaurantstore.com/search/kitchenette-cabinet.html",
+   "price_usd_typical": null
   },
   {
    "id": "office-sofa",
@@ -457,7 +494,8 @@
    "category": "front",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/office-sofa.html"
+   "reference_search": "https://www.webstaurantstore.com/search/office-sofa.html",
+   "price_usd_typical": 950
   },
   {
    "id": "office-shelf",
@@ -469,7 +507,73 @@
    "category": "storage",
    "utility": "-",
    "hood_required": false,
-   "reference_search": "https://www.webstaurantstore.com/search/commercial-shelving.html"
+   "reference_search": "https://www.webstaurantstore.com/search/commercial-shelving.html",
+   "price_usd_typical": 220
+  },
+  {
+   "id": "washroom-accessible",
+   "pack": "restaurant,salon,office",
+   "name_en": "Barrier-Free Washroom",
+   "name_zh": "无障碍卫生间",
+   "w_in": 84,
+   "d_in": 66,
+   "category": "room",
+   "utility": "water + drain",
+   "hood_required": false,
+   "reference_search": "https://www.webstaurantstore.com/search/barrier-free-washroom.html",
+   "price_usd_typical": null
+  },
+  {
+   "id": "partition-wall",
+   "pack": "restaurant,salon,office",
+   "name_en": "Partition Wall Segment",
+   "name_zh": "隔墙段",
+   "w_in": 96,
+   "d_in": 6,
+   "category": "structure",
+   "utility": "-",
+   "hood_required": false,
+   "reference_search": "https://www.webstaurantstore.com/search/partition-wall.html",
+   "price_usd_typical": null
+  },
+  {
+   "id": "dining-area",
+   "pack": "restaurant",
+   "name_en": "Dining Area Zone",
+   "name_zh": "就餐区",
+   "w_in": 120,
+   "d_in": 120,
+   "category": "zone",
+   "utility": "-",
+   "hood_required": false,
+   "reference_search": "https://www.webstaurantstore.com/search/restaurant-dining-area.html",
+   "price_usd_typical": null
+  },
+  {
+   "id": "dining-table-4",
+   "pack": "restaurant",
+   "name_en": "Dining Table for 4",
+   "name_zh": "四人餐桌",
+   "w_in": 36,
+   "d_in": 36,
+   "category": "front",
+   "utility": "-",
+   "hood_required": false,
+   "reference_search": "https://www.webstaurantstore.com/search/restaurant-table.html",
+   "price_usd_typical": 260
+  },
+  {
+   "id": "booth-seating",
+   "pack": "restaurant",
+   "name_en": "Booth Seating",
+   "name_zh": "卡座",
+   "w_in": 60,
+   "d_in": 30,
+   "category": "front",
+   "utility": "-",
+   "hood_required": false,
+   "reference_search": "https://www.webstaurantstore.com/search/restaurant-booth-seating.html",
+   "price_usd_typical": 850
   }
  ]
 }
